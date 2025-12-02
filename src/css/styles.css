@@ -139,6 +139,10 @@ h1 {
   margin-left: 10px;
   word-wrap: break-word;
 }
+#task-list li.completed span{
+  text-decoration: 2px line-through black;
+  color: black;
+}
 
 .task-buttons {
   display: flex;
