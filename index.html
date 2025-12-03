@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta name="author" content="Ana Cañete" />
+  <meta name="author" content="Ana Cañete" />
   <meta name="description" content="" />
-  <meta name="keywords"
-    content="HTML, CSS, JavaScript, TodoList, Check, To-Do, Task, Responsive Design " />
+  <meta name="keywords" content="HTML, CSS, JavaScript, TodoList, Check, To-Do, Task, Responsive Design " />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Title-->
   <title>Todo List </title>
   <!--Font-awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--CSS style-->
   <link rel="stylesheet" href="/src/css/styles.css">
-  
+
 </head>
+
 <body>
   <main class="container">
     <section class="todo-app">
       <h1>To-Do App</h1>
       <div class="stat-container">
-        <div class="detail">
+        <div class="details">
           <h3>Keep it Up!</h3>
           <div id="progressbar">
-            <div id="progess"></div>
+            <div id="progress"></div>
           </div>
-          <div class="stats-number">
-            <div id="numbers">0/0</div>
-          </div>
+        </div>
+        <div class="stats-number">
+          <div id="numbers">0 / 0</div>
         </div>
       </div>
       <form class="input-area">
         <input type="text" id="task-input" placeholder="Add a new task...">
         <button type="button" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
-        
+
       </form>
       <div class="todos-container">
-          <ul id="task-list">
-          </ul>
-          <img class="empty-image" src="/src/images/undraw_to-do-list_eoia.svg" alt="empty" >
-        </div>
+        <ul id="task-list">
+        </ul>
+        <img class="empty-image" src="/src/images/undraw_to-do-list_eoia.svg" alt="empty">
+      </div>
     </section>
   </main>
 </body>
 <script src="/src/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
 </html>
